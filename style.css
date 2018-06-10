@@ -1,0 +1,496 @@
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#analog-clock {
+    position: relative;
+    top: 0;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    -webkit-box-shadow: 0 0 1px 1px #000;
+    box-shadow: 0 0 1px 1px #000;
+    border-radius: 50%;
+}
+
+#clock-dial-circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    background: white;
+}
+
+.dial {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform-origin: 0 150px;
+    -ms-transform-origin: 0 150px;
+    transform-origin: 0 150px;
+    width: 2px;
+    height: 20px;
+    background: #000;
+}
+
+.dial-12 {
+    -webkit-transform: rotateZ(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotateZ(0deg);
+}
+
+.dial-1 {
+    -webkit-transform: rotateZ(30deg);
+    -ms-transform: rotate(30deg);
+    transform: rotateZ(30deg);
+}
+
+.dial-2 {
+    -webkit-transform: rotateZ(60deg);
+    -ms-transform: rotate(60deg);
+    transform: rotateZ(60deg);
+}
+
+.dial-3 {
+    -webkit-transform: rotateZ(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotateZ(90deg);
+}
+
+.dial-4 {
+    -webkit-transform: rotateZ(120deg);
+    -ms-transform: rotate(120deg);
+    transform: rotateZ(120deg);
+}
+
+.dial-5 {
+    -webkit-transform: rotateZ(150deg);
+    -ms-transform: rotate(150deg);
+    transform: rotateZ(150deg);
+}
+
+.dial-6 {
+    -webkit-transform: rotateZ(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotateZ(180deg);
+}
+
+.dial-7 {
+    -webkit-transform: rotateZ(210deg);
+    -ms-transform: rotate(210deg);
+    transform: rotateZ(210deg);
+}
+
+.dial-8 {
+    -webkit-transform: rotateZ(2400deg);
+    -ms-transform: rotate(2400deg);
+    transform: rotateZ(2400deg);
+}
+
+.dial-9 {
+    -webkit-transform: rotateZ(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotateZ(270deg);
+}
+
+.dial-10 {
+    -webkit-transform: rotateZ(300deg);
+    -ms-transform: rotate(300deg);
+    transform: rotateZ(300deg);
+}
+
+.dial-11 {
+    -webkit-transform: rotateZ(330deg);
+    -ms-transform: rotate(330deg);
+    transform: rotateZ(330deg);
+}
+
+.subdial {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform-origin: 0 150px;
+    -ms-transform-origin: 0 150px;
+    transform-origin: 0 150px;
+    width: 1px;
+    height: 10px;
+    background: #000;
+}
+
+.subdial-1 {
+    -webkit-transform: rotateZ(6deg);
+    -ms-transform: rotate(6deg);
+    transform: rotateZ(6deg);
+}
+
+.subdial-2 {
+    -webkit-transform: rotateZ(12deg);
+    -ms-transform: rotate(12deg);
+    transform: rotateZ(12deg);
+}
+
+.subdial-3 {
+    -webkit-transform: rotateZ(18deg);
+    -ms-transform: rotate(18deg);
+    transform: rotateZ(18deg);
+}
+
+.subdial-4 {
+    -webkit-transform: rotateZ(24deg);
+    -ms-transform: rotate(24deg);
+    transform: rotateZ(24deg);
+}
+
+.subdial-6 {
+    -webkit-transform: rotateZ(36deg);
+    -ms-transform: rotate(36deg);
+    transform: rotateZ(36deg);
+}
+
+.subdial-7 {
+    -webkit-transform: rotateZ(42deg);
+    -ms-transform: rotate(42deg);
+    transform: rotateZ(42deg);
+}
+
+.subdial-8 {
+    -webkit-transform: rotateZ(48deg);
+    -ms-transform: rotate(48deg);
+    transform: rotateZ(48deg);
+}
+
+.subdial-9 {
+    -webkit-transform: rotateZ(54deg);
+    -ms-transform: rotate(54deg);
+    transform: rotateZ(54deg);
+}
+
+.subdial-11 {
+    -webkit-transform: rotateZ(66deg);
+    -ms-transform: rotate(66deg);
+    transform: rotateZ(66deg);
+}
+
+.subdial-12 {
+    -webkit-transform: rotateZ(72deg);
+    -ms-transform: rotate(72deg);
+    transform: rotateZ(72deg);
+}
+
+.subdial-13 {
+    -webkit-transform: rotateZ(78deg);
+    -ms-transform: rotate(78deg);
+    transform: rotateZ(78deg);
+}
+
+.subdial-14 {
+    -webkit-transform: rotateZ(84deg);
+    -ms-transform: rotate(84deg);
+    transform: rotateZ(84deg);
+}
+
+.subdial-16 {
+    -webkit-transform: rotateZ(96deg);
+    -ms-transform: rotate(96deg);
+    transform: rotateZ(96deg);
+}
+
+.subdial-17 {
+    -webkit-transform: rotateZ(102deg);
+    -ms-transform: rotate(102deg);
+    transform: rotateZ(102deg);
+}
+
+.subdial-18 {
+    -webkit-transform: rotateZ(108deg);
+    -ms-transform: rotate(108deg);
+    transform: rotateZ(108deg);
+}
+
+.subdial-19 {
+    -webkit-transform: rotateZ(114deg);
+    -ms-transform: rotate(114deg);
+    transform: rotateZ(114deg);
+}
+
+.subdial-21 {
+    -webkit-transform: rotateZ(126deg);
+    -ms-transform: rotate(126deg);
+    transform: rotateZ(126deg);
+}
+
+.subdial-22 {
+    -webkit-transform: rotateZ(132deg);
+    -ms-transform: rotate(132deg);
+    transform: rotateZ(132deg);
+}
+
+.subdial-23 {
+    -webkit-transform: rotateZ(138deg);
+    -ms-transform: rotate(138deg);
+    transform: rotateZ(138deg);
+}
+
+.subdial-24 {
+    -webkit-transform: rotateZ(144deg);
+    -ms-transform: rotate(144deg);
+    transform: rotateZ(144deg);
+}
+
+.subdial-26 {
+    -webkit-transform: rotateZ(156deg);
+    -ms-transform: rotate(156deg);
+    transform: rotateZ(156deg);
+}
+
+.subdial-27 {
+    -webkit-transform: rotateZ(162deg);
+    -ms-transform: rotate(162deg);
+    transform: rotateZ(162deg);
+}
+
+.subdial-28 {
+    -webkit-transform: rotateZ(168deg);
+    -ms-transform: rotate(168deg);
+    transform: rotateZ(168deg);
+}
+
+.subdial-29 {
+    -webkit-transform: rotateZ(174deg);
+    -ms-transform: rotate(174deg);
+    transform: rotateZ(174deg);
+}
+
+.subdial-31 {
+    -webkit-transform: rotateZ(186deg);
+    -ms-transform: rotate(186deg);
+    transform: rotateZ(186deg);
+}
+
+.subdial-32 {
+    -webkit-transform: rotateZ(192deg);
+    -ms-transform: rotate(192deg);
+    transform: rotateZ(192deg);
+}
+
+.subdial-33 {
+    -webkit-transform: rotateZ(198deg);
+    -ms-transform: rotate(198deg);
+    transform: rotateZ(198deg);
+}
+
+.subdial-34 {
+    -webkit-transform: rotateZ(204deg);
+    -ms-transform: rotate(204deg);
+    transform: rotateZ(204deg);
+}
+
+.subdial-36 {
+    -webkit-transform: rotateZ(216deg);
+    -ms-transform: rotate(216deg);
+    transform: rotateZ(216deg);
+}
+
+.subdial-37 {
+    -webkit-transform: rotateZ(222deg);
+    -ms-transform: rotate(222deg);
+    transform: rotateZ(222deg);
+}
+
+.subdial-38 {
+    -webkit-transform: rotateZ(228deg);
+    -ms-transform: rotate(228deg);
+    transform: rotateZ(228deg);
+}
+
+.subdial-39 {
+    -webkit-transform: rotateZ(234deg);
+    -ms-transform: rotate(234deg);
+    transform: rotateZ(234deg);
+}
+
+.subdial-41 {
+    -webkit-transform: rotateZ(246deg);
+    -ms-transform: rotate(246deg);
+    transform: rotateZ(246deg);
+}
+
+.subdial-42 {
+    -webkit-transform: rotateZ(252deg);
+    -ms-transform: rotate(252deg);
+    transform: rotateZ(252deg);
+}
+
+.subdial-43 {
+    -webkit-transform: rotateZ(258deg);
+    -ms-transform: rotate(258deg);
+    transform: rotateZ(258deg);
+}
+
+.subdial-44 {
+    -webkit-transform: rotateZ(264deg);
+    -ms-transform: rotate(264deg);
+    transform: rotateZ(264deg);
+}
+
+.subdial-46 {
+    -webkit-transform: rotateZ(276deg);
+    -ms-transform: rotate(276deg);
+    transform: rotateZ(276deg);
+}
+
+.subdial-47 {
+    -webkit-transform: rotateZ(282deg);
+    -ms-transform: rotate(282deg);
+    transform: rotateZ(282deg);
+}
+
+.subdial-48 {
+    -webkit-transform: rotateZ(288deg);
+    -ms-transform: rotate(288deg);
+    transform: rotateZ(288deg);
+}
+
+.subdial-49 {
+    -webkit-transform: rotateZ(294deg);
+    -ms-transform: rotate(294deg);
+    transform: rotateZ(294deg);
+}
+
+.subdial-51 {
+    -webkit-transform: rotateZ(306deg);
+    -ms-transform: rotate(306deg);
+    transform: rotateZ(306deg);
+}
+
+.subdial-52 {
+    -webkit-transform: rotateZ(312deg);
+    -ms-transform: rotate(312deg);
+    transform: rotateZ(312deg);
+}
+
+.subdial-53 {
+    -webkit-transform: rotateZ(318deg);
+    -ms-transform: rotate(318deg);
+    transform: rotateZ(318deg);
+}
+
+.subdial-54 {
+    -webkit-transform: rotateZ(324deg);
+    -ms-transform: rotate(324deg);
+    transform: rotateZ(324deg);
+}
+
+.subdial-56 {
+    -webkit-transform: rotateZ(336deg);
+    -ms-transform: rotate(336deg);
+    transform: rotateZ(336deg);
+}
+
+.subdial-57 {
+    -webkit-transform: rotateZ(342deg);
+    -ms-transform: rotate(342deg);
+    transform: rotateZ(342deg);
+}
+
+.subdial-58 {
+    -webkit-transform: rotateZ(348deg);
+    -ms-transform: rotate(348deg);
+    transform: rotateZ(348deg);
+}
+
+.subdial-59 {
+    -webkit-transform: rotateZ(354deg);
+    -ms-transform: rotate(354deg);
+    transform: rotateZ(354deg);
+}
+
+#clock-dial {
+    width: 100%;
+    height: 100%;
+    background: #333;
+    border: 15px solid gray;
+
+}
+
+.hands {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+}
+
+.hand {
+    position: absolute;
+    -webkit-transform-origin: center bottom;
+    -ms-transform-origin: center bottom;
+    transform-origin: center bottom;
+}
+
+#hour-hand {
+    width: 10px;
+    height: 25%;
+    background: transparent;
+    top: 25%;
+    left: calc(50% - 5px);
+    border-radius: 4px;
+    border: 3px solid #555
+}
+
+#min-hand {
+    width: 5px;
+    height: 40%;
+    background: #555;
+    top: 10%;
+    left: calc(50% - 2.5px);
+    border-radius: 2px;
+}
+
+#sec-hand {
+    width: 2px;
+    height: 40%;
+    background: red;
+    top: 10%;
+    left: 50%;
+    margin-left: -1px;
+}
+
+#sec-hand:after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: block;
+    background: red;
+    top: calc(100% - 6px);
+    left: -5px;
+}
+
+#timezone {
+    margin: 30px auto;
+    display: block;
+    font-size: 16px;
+    width: 90%;
+}
+
+#stop, #start {
+    margin: 20px auto;
+    display: block;
+    cursor: pointer;
+    padding: 3px 10px;
+    font-size: 16px;
+}
+
+#start {
+    display: none;
+}
